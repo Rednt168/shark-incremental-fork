@@ -1,6 +1,6 @@
 const EVOLUTION_TREE = {
     faith_cost: [
-        ["fish",x=>Decimal.pow(10,Decimal.pow(hasResearch('f2') ? 1e3 : 1e4,x.add(1).div(tmp.faith_mult).scale(1e7,1.1,"ME2").scale(1e6,2,"P"))),x=>x.log10().log(hasResearch('f2') ? 1e3 : 1e4).scale(1e6,2,"P",true).scale(1e7,1.1,"ME2",true).mul(tmp.faith_mult).floor()],
+        ["fish",x=>Decimal.pow(10,Decimal.pow(hasResearch('f2') ? 1e3 : 1e4,x.add(1).div(tmp.faith_mult).scale(1e4,1.1,"ME2").scale(1e6,2,"P"))),x=>x.log10().log(hasResearch('f2') ? 1e3 : 1e4).scale(1e6,2,"P",true).scale(1e7,1.1,"ME2",true).mul(tmp.faith_mult).floor()],
         ["prestige",x=>Decimal.pow(10,Decimal.pow(hasResearch('f2') ? 1e2 : 1e3,x.add(1).div(tmp.faith_mult).scale(1e7,1.1,"ME2").scale(1e6,2,"P"))),x=>x.log10().log(hasResearch('f2') ? 1e2 : 1e3).scale(1e6,2,"P",true).scale(1e7,1.1,"ME2",true).mul(tmp.faith_mult).floor()],
         ["core",x=>Decimal.pow(1e60,x.add(1).div(tmp.faith_mult).scale(1e7,1.1,"ME2").scale(1e6,2,"P").scale(2.5e3,2,"ME2").scale(20,2,'P')),x=>x.log(1e60).scale(20,2,'P',true).scale(2.5e3,2,"ME2",true).scale(1e6,2,"P",true).scale(1e7,1.1,"ME2",true).mul(tmp.faith_mult).floor()],
     ],
